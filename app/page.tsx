@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-
+import {NumberInput} from "./components/number"
 export default function Home() {
   const [number1, setNumber1] = useState(0);
   const [number2, setNumber2] = useState(0);
@@ -11,27 +11,26 @@ export default function Home() {
   const div = () => setResult(number1 / number2);
   return (
     <main>
-      <input
-        className="a1"
-        type="number"
-        placeholder="الرقم الاول"
-        value={number1}
-        onChange={(e) => setNumber1(parseInt(e.target.value))}
+      <NumberInput 
+      placeholder="الرقم الاول"
+      setValue={setNumber1}
+      value={number1}
+
       />
-      <input
-        className="a1 a2"
-        type="number"
-        placeholder="الارقم الثاني"
-        value={number2}
-        onChange={(e) => setNumber2(parseInt(e.target.value))}
+      <NumberInput className="a2"
+      placeholder="الرقم الثاني"
+      setValue={setNumber2}
+      value={number2}
+
       />
+      
       <button className="btn" onClick={ mult}>
         X
       </button>
       <button onClick={ div}> قسمة</button>
       <button onClick={ add }> جمع</button>
       <button onClick={ min}> طرح</button>
-      <span>{result}الناتج</span>
+      <span className="gar">{result}الناتج</span>
     </main>
   );
 }
