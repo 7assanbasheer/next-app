@@ -27,6 +27,11 @@
   height: 50px;
   border-radius: 5px;
 }
+body {
+  color-scheme: dark ;
+  background-color: black ;
+
+}
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities;
