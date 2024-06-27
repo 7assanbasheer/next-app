@@ -17,7 +17,7 @@ export default function Home() {
       value={number1}
 
       />
-      <NumberInput className="a2"
+      <NumberInput className="bg-white"
       placeholder="الرقم الثاني"
       setValue={setNumber2}
       value={number2}

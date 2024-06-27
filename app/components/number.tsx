@@ -8,7 +8,7 @@ type Props = {
 export function NumberInput(props:Props) {
   return (
     <input
-      className={"a1 "+props.className}
+      className={" bg-violet-800 text-yellow-400 p-4 w-20 rounded-2xl "+props.className}
       type="number"
       placeholder={props.placeholder}
       value={props.value}

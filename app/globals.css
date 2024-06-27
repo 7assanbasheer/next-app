@@ -32,7 +32,7 @@ body {
 .gar {
   color: aliceblue;
 }
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -64,4 +64,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-} */
+}
